@@ -1,0 +1,59 @@
+import "UnityEngine"
+
+if not UnityEngine.GameObject then 
+    error("Click Make/All to generate lua wrap file")  
+end  
+
+local class={}
+
+function main()
+    print("run lua main function")  
+    local cs = GameObject.Find("player") 
+    
+    local te = cs:GetComponent("luatest")  
+    te:luaCallCS("lua called cs")  
+    
+     local g;
+     luatest.ctd = function(path , go)
+        g = go
+        print(path,go.name)
+     end
+     luatest.callD()
+     
+     print(g.name)  
+     print(cs.name)  
+     g.transform.parent = cs.transform  
+     g:AddComponent(UnityEngine.Rigidbody)  
+     g:AddComponent(UnityEngine.BoxCollider)  
+     local c=g:AddComponent(UnityEngine.MeshRenderer)  
+     c.probeAnchor = cs.transform  
+   
+     -- test UI  
+     local obj = GameObject.Find("Canvas/Button")  
+     local btn = obj:GetComponent("Button")  
+     local num = 0  
+     btn.onClick:AddListener(function()  
+         num = num+1  
+         print(" click btn ,","num = ",num)  
+     end)  
+   
+     --if you want to use update function,you need return class   
+     return class  
+end
+
+function createcube(a)
+    HelloWorld.nullf(1)  
+    HelloWorld.nullf()  
+    print("run this function")  
+    local name = " cqw"  
+    a = a..name  
+    return a  
+end
+
+function class:update()
+    print(Time.deltaTime)
+end
+
+function class:hello()
+    print("In the function:hello!!!!")
+end
