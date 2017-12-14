@@ -52,8 +52,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\luatest.cs" />
-    <Compile Include="Assets\resourceLoader.cs" />
+    <Compile Include="Assets\scripts\enemyAI.cs" />
+    <Compile Include="Assets\scripts\Entity.cs" />
+    <Compile Include="Assets\scripts\hurtPlayer.cs" />
+    <Compile Include="Assets\scripts\luatest.cs" />
+    <Compile Include="Assets\scripts\moveController.cs" />
+    <Compile Include="Assets\scripts\resourceLoader.cs" />
+    <Compile Include="Assets\scripts\startManager.cs" />
+    <Compile Include="Assets\scripts\uiController.cs" />
     <Compile Include="Assets\SLua\LuaObject\Custom\BindCustom.cs" />
     <Compile Include="Assets\SLua\LuaObject\Custom\Lua_AbsClass.cs" />
     <Compile Include="Assets\SLua\LuaObject\Custom\Lua_Custom.cs" />
@@ -793,7 +799,6 @@
     <Compile Include="Assets\SLua\Slua\example\VarObj.cs" />
     <Compile Include="Assets\SLua\Slua\Source\LuaThreadWrapper.cs" />
     <Compile Include="Assets\SLua\Slua\Source\UnityExtension.cs" />
-    <Compile Include="Assets\startManager.cs" />
     <None Include="Assets\SLua\Slua\Resources\module\some.txt" />
     <None Include="Assets\SLua\Slua\Resources\main.txt" />
     <None Include="Assets\Resources\startGame.txt" />

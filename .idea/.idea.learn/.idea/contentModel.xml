@@ -7,7 +7,6 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="luatest.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
@@ -15,10 +14,19 @@
             </e>
           </e>
         </e>
-        <e p="resourceLoader.cs" t="Include" />
         <e p="Resources" t="Include">
           <e p="a.txt" t="Include" />
           <e p="startGame.txt" t="Include" />
+        </e>
+        <e p="scripts" t="Include">
+          <e p="enemyAI.cs" t="Include" />
+          <e p="Entity.cs" t="Include" />
+          <e p="hurtPlayer.cs" t="Include" />
+          <e p="luatest.cs" t="Include" />
+          <e p="moveController.cs" t="Include" />
+          <e p="resourceLoader.cs" t="Include" />
+          <e p="startManager.cs" t="Include" />
+          <e p="uiController.cs" t="Include" />
         </e>
         <e p="SLua" t="Include">
           <e p="LuaObject" t="Include">
@@ -807,7 +815,6 @@
             </e>
           </e>
         </e>
-        <e p="startManager.cs" t="Include" />
       </e>
       <e p="learn.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />
