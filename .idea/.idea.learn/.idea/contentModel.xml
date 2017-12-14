@@ -7,9 +7,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="AppDelegate.cs" t="Include" />
         <e p="luatest.cs" t="Include" />
-        <e p="Main.cs" t="Include" />
         <e p="Plugins" t="Include">
           <e p="Editor" t="Include">
             <e p="JetBrains" t="Include">
@@ -17,9 +15,10 @@
             </e>
           </e>
         </e>
-        <e p="qt.txt" t="Include" />
+        <e p="resourceLoader.cs" t="Include" />
         <e p="Resources" t="Include">
           <e p="a.txt" t="Include" />
+          <e p="startGame.txt" t="Include" />
         </e>
         <e p="SLua" t="Include">
           <e p="LuaObject" t="Include">
@@ -808,6 +807,7 @@
             </e>
           </e>
         </e>
+        <e p="startManager.cs" t="Include" />
       </e>
       <e p="learn.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

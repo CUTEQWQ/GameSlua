@@ -1,0 +1,64 @@
+--
+-- Created by IntelliJ IDEA.
+-- User: cutewen
+-- Date: 2017/12/11
+-- Time: 下午11:25
+-- To change this template use File | Settings | File Templates.
+--
+
+import "UnityEngine"
+
+if not UnityEngine.GameObject then
+    error("Click Make/All to generate lua wrap file")
+end 
+
+local class = {}
+
+function main() 
+    print("run lua main function")
+    
+    local camera = GameObject.Find("Main Camera")
+    local script = camera:GetComponent("startManager")
+    local resLoader = camera:GetComponent("resourceLoader")
+    local canvas = GameObject.Find("Canvas")
+    
+    local image = resLoader.m_background
+    image.transform.parent = canvas.transform
+    image.transform.localPosition = Vector3(0,0,0)
+    image.transform.localScale = Vector3(7,4,1)
+    
+    local textGame = resLoader.m_text
+    textGame.transform.parent = canvas.transform
+    --textGame.transform.localPosition = Vector3(0,0,0)
+    local textScript = textGame:GetComponent("Text")
+    textScript.text = "Play Game!"
+    textScript.color = Color.red
+    
+    local btn = resLoader.m_btn
+    btn.transform.parent = canvas.transform
+    
+    --local gameObject;
+    --gameObject = script:createObj("play")
+    --local canvas = GameObject.Find("Canvas")
+    --gameObject.transform.parent = canvas.transform
+    
+    --local image = script:createObj("background","Image")
+    --image.transform.parent = canvas.transform
+    --image.transform.localPosition = Vector3(0,0,0)
+    --image.transform.localScale = Vector3(7,4,1)
+    
+    --local gameText = script:createObj("play game","Text")
+    --gameText.transform.parent = canvas.transform
+    --gameText.transform.localPosition = Vector3(0,0,0)
+    --local textScript = gameText:GetComponent("Text")
+    --textScript.text = "Play Game!"
+    --textScript.color = Color.red
+    --textScript.font = "Arial"
+    
+
+    return class
+end
+
+function pp()
+    print("in pp")
+end

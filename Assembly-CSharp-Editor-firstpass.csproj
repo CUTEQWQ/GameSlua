@@ -55,6 +55,7 @@
     <Compile Include="Assets\Plugins\Editor\JetBrains\Unity3DRider.cs" />
     <None Include="Assets\SLua\Slua\Resources\module\some.txt" />
     <None Include="Assets\SLua\Slua\Resources\main.txt" />
+    <None Include="Assets\Resources\startGame.txt" />
     <None Include="Assets\SLua\Slua\Resources\circle\circle.txt" />
     <None Include="Assets\SLua\Slua\Resources\perf.txt" />
     <None Include="Assets\SLua\Slua\Resources\delegate.txt" />
