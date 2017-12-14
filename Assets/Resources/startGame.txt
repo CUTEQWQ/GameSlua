@@ -15,27 +15,27 @@ end
 local class = {}
 
 function main() 
-    print("run lua main function")
+    --print("run lua main function")
     
-    local camera = GameObject.Find("Main Camera")
-    local script = camera:GetComponent("startManager")
-    local resLoader = camera:GetComponent("resourceLoader")
-    local canvas = GameObject.Find("Canvas")
+    --local camera = GameObject.Find("Main Camera")
+    --local script = camera:GetComponent("startManager")
+    --local resLoader = camera:GetComponent("resourceLoader")
+    --local canvas = GameObject.Find("Canvas")
     
-    local image = resLoader.m_background
-    image.transform.parent = canvas.transform
-    image.transform.localPosition = Vector3(0,0,0)
-    image.transform.localScale = Vector3(7,4,1)
+    --local image = resLoader.m_background
+    --image.transform.parent = canvas.transform
+    --image.transform.localPosition = Vector3(0,0,0)
+    --image.transform.localScale = Vector3(7,4,1)
     
-    local textGame = resLoader.m_text
-    textGame.transform.parent = canvas.transform
+    --local textGame = resLoader.m_text
+    --textGame.transform.parent = canvas.transform
     --textGame.transform.localPosition = Vector3(0,0,0)
-    local textScript = textGame:GetComponent("Text")
-    textScript.text = "Play Game!"
-    textScript.color = Color.red
+    --local textScript = textGame:GetComponent("Text")
+    --textScript.text = "Play Game!"
+    --textScript.color = Color.red
     
-    local btn = resLoader.m_btn
-    btn.transform.parent = canvas.transform
+    --local btn = resLoader.m_btn
+    --btn.transform.parent = canvas.transform
     
     --local gameObject;
     --gameObject = script:createObj("play")
