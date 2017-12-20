@@ -54,12 +54,16 @@
   <ItemGroup>
     <Compile Include="Assets\scripts\enemyAI.cs" />
     <Compile Include="Assets\scripts\Entity.cs" />
+    <Compile Include="Assets\scripts\EventMagaer.cs" />
+    <Compile Include="Assets\scripts\followingtarget.cs" />
     <Compile Include="Assets\scripts\hurtPlayer.cs" />
     <Compile Include="Assets\scripts\luatest.cs" />
     <Compile Include="Assets\scripts\moveController.cs" />
     <Compile Include="Assets\scripts\resourceLoader.cs" />
     <Compile Include="Assets\scripts\startManager.cs" />
+    <Compile Include="Assets\scripts\startUiControl.cs" />
     <Compile Include="Assets\scripts\uiController.cs" />
+    <Compile Include="Assets\scripts\yieldCor.cs" />
     <Compile Include="Assets\SLua\LuaObject\Custom\BindCustom.cs" />
     <Compile Include="Assets\SLua\LuaObject\Custom\Lua_AbsClass.cs" />
     <Compile Include="Assets\SLua\LuaObject\Custom\Lua_Custom.cs" />

@@ -21,12 +21,16 @@
         <e p="scripts" t="Include">
           <e p="enemyAI.cs" t="Include" />
           <e p="Entity.cs" t="Include" />
+          <e p="EventMagaer.cs" t="Include" />
+          <e p="followingtarget.cs" t="Include" />
           <e p="hurtPlayer.cs" t="Include" />
           <e p="luatest.cs" t="Include" />
           <e p="moveController.cs" t="Include" />
           <e p="resourceLoader.cs" t="Include" />
           <e p="startManager.cs" t="Include" />
+          <e p="startUiControl.cs" t="Include" />
           <e p="uiController.cs" t="Include" />
+          <e p="yieldCor.cs" t="Include" />
         </e>
         <e p="SLua" t="Include">
           <e p="LuaObject" t="Include">
