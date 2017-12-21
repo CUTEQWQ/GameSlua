@@ -28,6 +28,7 @@
           <e p="hurtPlayer.cs" t="Include" />
           <e p="item.cs" t="Include" />
           <e p="luatest.cs" t="Include" />
+          <e p="mapGenerator.cs" t="Include" />
           <e p="medetailControl.cs" t="Include" />
           <e p="moveController.cs" t="Include" />
           <e p="packdetailControl.cs" t="Include" />
@@ -41,6 +42,8 @@
         </e>
         <e p="shader" t="Include">
           <e p="dissolve.shader" t="Include" />
+          <e p="outline.shader" t="Include" />
+          <e p="surfaceLight.shader" t="Include" />
         </e>
         <e p="SLua" t="Include">
           <e p="LuaObject" t="Include">

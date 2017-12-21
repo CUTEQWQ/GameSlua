@@ -31,6 +31,10 @@ public class Entity : MonoBehaviour
 	public void heal(float hp)
 	{
 		m_hp += hp;
+		if (m_hp > 100)
+		{
+			m_hp = 100;
+		}
 	}
 
     public void Damage(float hurt)

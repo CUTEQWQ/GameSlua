@@ -64,8 +64,10 @@
     <None Include="Assets\Resources\startGame.txt" />
     <None Include="Assets\SLua\Slua\Resources\circle\circle.txt" />
     <None Include="Assets\shader\dissolve.shader" />
+    <None Include="Assets\shader\surfaceLight.shader" />
     <None Include="Assets\SLua\Slua\Resources\perf.txt" />
     <None Include="Assets\SLua\Slua\Resources\delegate.txt" />
+    <None Include="Assets\shader\outline.shader" />
     <None Include="Assets\Resources\a.txt" />
     <None Include="Assets\SLua\Slua\Resources\valuetype.txt" />
     <None Include="Assets\SLua\Slua\Resources\varobj.txt" />
