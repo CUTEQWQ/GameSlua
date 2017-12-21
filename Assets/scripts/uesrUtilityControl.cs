@@ -7,6 +7,8 @@ public class uesrUtilityControl : MonoBehaviour {
 
 	public GameObject mebtn;
 	public GameObject meclone;
+	public GameObject packbtn;
+	public GameObject packclone;
 	private item m_item;
 	
 	// Use this for initialization
@@ -15,12 +17,13 @@ public class uesrUtilityControl : MonoBehaviour {
 
 		//button上挂一个事件监听
 		EventMagaer.addEventListener(mebtn, EventTriggerType.PointerClick, clickme);
+		EventMagaer.addEventListener(packbtn, EventTriggerType.PointerClick, clickpack);
 
 	}
 	void clickme(BaseEventData data)
 	{
 		m_item.Holding = false;
-		m_item.ItemType = item.itemType.Brick;
+		m_item.ItemType = itemType.Brick;
 		if (m_item.Unique)
 		{
 			if (!m_item.Holding)
@@ -41,5 +44,13 @@ public class uesrUtilityControl : MonoBehaviour {
 			clonert.anchoredPosition3D = new Vector3(0, 0, 0);
 		}
 
+	}
+
+	void clickpack(BaseEventData eventData)
+	{
+		GameObject clone = Instantiate(packclone);
+		clone.transform.parent = GameObject.Find("Canvas").transform;
+		RectTransform clonert = clone.transform as RectTransform;
+		clonert.anchoredPosition3D = new Vector3(0, 0, 0);	
 	}
 }

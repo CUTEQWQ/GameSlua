@@ -24,6 +24,15 @@ public class Entity : MonoBehaviour
 		return m_hp;
 	}
 
+	public void setMyHp(float hp)
+	{
+		m_hp = hp;
+	}
+	public void heal(float hp)
+	{
+		m_hp += hp;
+	}
+
     public void Damage(float hurt)
 	{
 		m_hp -= hurt;

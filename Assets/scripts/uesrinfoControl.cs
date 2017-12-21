@@ -37,12 +37,20 @@ public class uesrinfoControl : MonoBehaviour {
 
 	IEnumerator loadprofile()
 	{
-		WWW www = new WWW("http://pic.qqtn.com/up/2017-12/2017120911584418847.jpg");
+		WWW www = new WWW("http://pic.qqtn.com/up/2017-12/15137394195559293.jpg");
 		yield return www;
-		profileimage = www.texture;
-		//byte[] bytes = profileimage.EncodeToPNG();
-		Sprite sprite = Sprite.Create(profileimage, new Rect(0, 0, profileimage.width, profileimage.height), new Vector2(0,0));
-		m_profile.sprite = sprite;
-		Debug.Log("load success");
+		if (www.texture)
+		{
+			profileimage = www.texture;
+			//byte[] bytes = profileimage.EncodeToPNG();
+			Sprite sprite = Sprite.Create(profileimage, new Rect(0, 0, profileimage.width, profileimage.height), new Vector2(0,0));
+			m_profile.sprite = sprite;
+			Debug.Log("load success");	
+		}
+		else
+		{
+			Debug.Log("load failed");
+		}
+
 	}
 }

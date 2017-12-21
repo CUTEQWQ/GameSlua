@@ -2,20 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum itemType
+{
+	//ui 类
+	Brick = 0,
+	//装备类
+	Equipment = 1,
+	//角色类
+	Role = 2,
+	
+	//治愈类
+	Heal = 3
+}
+
 public class item : MonoBehaviour
 {
 	private bool unique;
 	private bool holding;
-	public enum itemType
-	{
-		//ui 类
-		Brick = 0,
-		//装备类
-		Equipment = 1,
-		//角色类
-		Role = 2
-	}
-
 	private itemType m_itemtype;
 
 	public itemType ItemType

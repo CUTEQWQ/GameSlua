@@ -24,11 +24,13 @@
           <e p="Entity.cs" t="Include" />
           <e p="EventMagaer.cs" t="Include" />
           <e p="followingtarget.cs" t="Include" />
+          <e p="healbool.cs" t="Include" />
           <e p="hurtPlayer.cs" t="Include" />
           <e p="item.cs" t="Include" />
           <e p="luatest.cs" t="Include" />
           <e p="medetailControl.cs" t="Include" />
           <e p="moveController.cs" t="Include" />
+          <e p="packdetailControl.cs" t="Include" />
           <e p="resourceLoader.cs" t="Include" />
           <e p="startManager.cs" t="Include" />
           <e p="startUiControl.cs" t="Include" />
@@ -36,6 +38,9 @@
           <e p="uesrUtilityControl.cs" t="Include" />
           <e p="uiController.cs" t="Include" />
           <e p="yieldCor.cs" t="Include" />
+        </e>
+        <e p="shader" t="Include">
+          <e p="dissolve.shader" t="Include" />
         </e>
         <e p="SLua" t="Include">
           <e p="LuaObject" t="Include">
