@@ -27,6 +27,7 @@
           <e p="healbool.cs" t="Include" />
           <e p="hurtPlayer.cs" t="Include" />
           <e p="item.cs" t="Include" />
+          <e p="itemControl.cs" t="Include" />
           <e p="luatest.cs" t="Include" />
           <e p="mapGenerator.cs" t="Include" />
           <e p="medetailControl.cs" t="Include" />
