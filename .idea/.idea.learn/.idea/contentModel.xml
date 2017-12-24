@@ -33,7 +33,9 @@
           <e p="mapGenerator.cs" t="Include" />
           <e p="medetailControl.cs" t="Include" />
           <e p="moveController.cs" t="Include" />
+          <e p="NotifyManager.cs" t="Include" />
           <e p="packdetailControl.cs" t="Include" />
+          <e p="playerManager.cs" t="Include" />
           <e p="resourceLoader.cs" t="Include" />
           <e p="startManager.cs" t="Include" />
           <e p="startUiControl.cs" t="Include" />

@@ -7,11 +7,13 @@ public class Entity : MonoBehaviour
 	private float m_hp;
 
 	private bool m_alive;
+
 	// Use this for initialization
 	void Start ()
 	{
 		m_hp = 100;
 		m_alive = true;
+		
 	}
 	
 	// Update is called once per frame

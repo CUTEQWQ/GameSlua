@@ -41,6 +41,11 @@ public class itemControl : item
 		{
 			Debug.Log("Get an item"); 
 			m_player.GetComponent<itemManager>().m_items.Add(this);
+			
+			//notify
+			Notify notify = new Notify(gameObject, m_player, "PickupItem");
+			NotifyManager.SendNotify(notify);
+			
 			Destroy(gameObject);
 		}
 	}
