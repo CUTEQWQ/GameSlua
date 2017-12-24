@@ -5,7 +5,9 @@ using UnityEngine;
 public class mapGenerator : MonoBehaviour
 {
 	public GameObject healbool;
+	public GameObject originitem;
 	public int healboolNum = 20;
+	public int originitemNum = 20;
 
 	private Transform m_ground;
 	
@@ -18,6 +20,13 @@ public class mapGenerator : MonoBehaviour
 			GameObject clone = Instantiate(healbool);
 			Vector2 p = GenerateRandomVector2(m_ground, healbool.transform);
 			clone.transform.position = new Vector3(p.x, 0.5f, p.y);
+		}
+
+		for (int j = 0; j < originitemNum; j++)
+		{
+			GameObject clone = Instantiate(originitem);
+			Vector2 p = GenerateRandomVector2(m_ground, originitem.transform);
+			clone.transform.position = new Vector3(p.x, 0.7f, p.y);
 		}
 	}
 

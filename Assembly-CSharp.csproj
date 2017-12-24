@@ -61,6 +61,7 @@
     <Compile Include="Assets\scripts\hurtPlayer.cs" />
     <Compile Include="Assets\scripts\item.cs" />
     <Compile Include="Assets\scripts\itemControl.cs" />
+    <Compile Include="Assets\scripts\itemManager.cs" />
     <Compile Include="Assets\scripts\luatest.cs" />
     <Compile Include="Assets\scripts\mapGenerator.cs" />
     <Compile Include="Assets\scripts\medetailControl.cs" />

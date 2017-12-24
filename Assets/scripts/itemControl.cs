@@ -2,16 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class itemControl : MonoBehaviour
+public class itemControl : item
 {
     Material m_material;
 
 	public Material trigger_material;
+
+	private GameObject m_player;
 	
 	// Use this for initialization
 	void Start ()
 	{
 		m_material = GetComponent<Renderer>().material;
+		ItemType = itemType.Equipment;
+		m_player = GameObject.FindWithTag("Player");
 	}
 	
 	// Update is called once per frame
@@ -35,7 +39,8 @@ public class itemControl : MonoBehaviour
 		}
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			Debug.Log("Get an item");
+			Debug.Log("Get an item"); 
+			m_player.GetComponent<itemManager>().m_items.Add(this);
 			Destroy(gameObject);
 		}
 	}
