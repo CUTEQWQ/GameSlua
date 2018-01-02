@@ -12,6 +12,7 @@ public class playerManager : MonoBehaviour
 	void Start () {
 		gameObject.GetComponent<NotifyManager>().AddNotifier("PickupItem", PickupItem);
 		gameObject.GetComponent<NotifyManager>().AddNotifier("EatHeal", EatHeal);
+		gameObject.GetComponent<NotifyManager>().AddNotifier("Hurt", Hurt);
 	}
 	
 	void PickupItem(Notify notify)
@@ -23,4 +24,11 @@ public class playerManager : MonoBehaviour
 	{
 		notifytxt.text += "Ate a HealBool!"+"\n";
 	}
+
+	void Hurt(Notify notify)
+	{
+		notifytxt.text += "Be Hurt!"+"\n";
+		gameObject.GetComponent<Entity>().Damage(10.0f);
+	}
+	
 }

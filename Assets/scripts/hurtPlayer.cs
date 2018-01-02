@@ -6,11 +6,9 @@ public class hurtPlayer : MonoBehaviour
 {
 	private GameObject m_player;
 
-	private Entity m_playeren;
 	// Use this for initialization
 	void Start () {
 		m_player = GameObject.FindWithTag("Player");
-		m_playeren = m_player.GetComponent<Entity>();
 	}
 	
 	// Update is called once per frame
@@ -22,8 +20,10 @@ public class hurtPlayer : MonoBehaviour
 	{		
 		if (other.gameObject.name.Equals("player"))
 		{
-			Debug.Log("hit player!");
-			m_playeren.Damage(10);
+			Notify notify = new Notify(gameObject, m_player , "Hurt");
+			NotifyManager.SendNotify(notify);
+			
+			//m_playeren.Damage(10);
 			Destroy(gameObject);
 		}
 	}
